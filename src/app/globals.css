@@ -18,11 +18,26 @@ body {
 .bg-linear-gray{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50.24%, rgba(255, 255, 255, 0) 102.54%);
 }
-.custom-gradient{
-  background: linear-gradient(238.15deg, rgba(252, 122, 105, 0.90) -11.09%, rgba(38, 0, 87, 0.90) 238.15%);
+.bg-linear-line{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.50) 1.14%, rgba(255, 255, 255, 0.00) 100%);
+}
+.bg-linear-btn{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.14%, rgba(0, 0, 0, 1) 28%);
+}
+.bg-linear-pink-purple{
+  background: linear-gradient(93deg, rgba(252, 122, 105, 0.90) -11.09%, rgba(38, 0, 87, 0.90) 238.15%);
+}
+.bg-linear-pink{
+  background-image: linear-gradient(#D399A4, #D399A400);
 }
 .text-linear-gray{
   background: linear-gradient(253deg, #FFF -6.54%, rgba(255, 255, 255, 0.13) 105.36%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.backdrop-blur{
+  --tw-backdrop-blur: blur(30px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
