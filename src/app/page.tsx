@@ -2,112 +2,77 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+    <div>
+      <div className="max-w-md mx-auto bg-[#000000]">
+        <section className="relative pt-5 text-center">
+        <img src="/assets/images/live-the-peak.png"className="w-full h-auto" />
+        <span style={{ backgroundImage: "url(/assets/logo/jupiter-select-logo.png)" }} className="bg-no-repeat bg-contain w-[130px] h-12 absolute inline-block top-28 left-[110px]"></span>
+        <div className="flex gap-3 items-center justify-center mb-[30px]">
+        <span style={{ backgroundImage: "url(/assets/icons/left-leavs.png)" }} className="bg-no-repeat bg-contain w-[30px] h-16"></span>
+        <div>
+          <p className="text-sm font-bold leading-[19px] text-[#E1E1E1]"> 
+          <span className="text-2xl font-bold leading-[34px]">3%</span>  cashback on UPI
+
+          <span style={{ backgroundImage: "url(/assets/icons/upi-icon.png)" }} className="bg-no-repeat bg-contain w-6 h-6 inline-block align-middle pl-[4px]"></span>
+          </p>
+          <div className="h-px w-48 mx-auto bg-linear-gray mt-1 mb-2"></div>
+          <p className="text-xs font-medium text-white/50">on top 10 brands and bill payments</p>
         </div>
+        <span style={{ backgroundImage: "url(/assets/icons/right-leavs.png)" }} className="bg-no-repeat bg-contain w-[30px] h-16"></span>
+        </div>
+        <span style={{ backgroundImage: "url(/assets/images/top-10-brands.png)" }} className="bg-no-repeat bg-contain w-[236px] h-[62px] inline-block mb-2"></span>
+        <div className="p-px rounded-lg">
+          <button className="custom-gradient rounded-lg p-4 text-lg font-bold leading-6 text-white w-[312px] mb-2">
+          Join the waitlist
+          </button>
+          <p className="text-xs font-medium text-white">The most rewarding account</p>
+        </div>
+      
+        </section>
+        <section className="bg-no-repeat bg-cover w-full h-[566px] inline-block text-center py-[56px] px-5" style={{ backgroundImage: "url(/assets/images/boat-bg.png)" }}>
+        <h2 className="text-[38px] font-bold leading-[42px] text-linear-gray mb-4">Pay around the<br/>world for less</h2>
+        <p className="text-base font-normal leading-5 text-white">Zero Forex Fee </p>
+        </section>
+        <section className="py-[52px] px-5 relative">
+        <span style={{ backgroundImage: "url(/assets/images/bg-light-shape.webp)" }} className="bg-no-repeat bg-cover w-full h-[591px] absolute inline-block top-0 left-0"></span>
+        <div className="text-center">
+          <h2 className="text-[38px] font-bold leading-[42px] text-linear-gray mb-[50px]">It’s rewarding <br />up here</h2>
+          <div className="bg-[#FFFFFF0A] gap-8 rounded-[8px] pt-4 pr-6 pb-4 pl-4 flex items-center text-left mb-2 border border-gray-700">
+          <span className="bg-no-repeat bg-contain w-12 h-12 inline-block" style={{ backgroundImage: "url(/assets/icons/Insights-monthly-expenses.png);"}}></span>
+          <p className="text-[#FFFFFF99]">Insights on all your monthly <br />expenses</p>
+          </div>
+          <div className="bg-[#FFFFFF0A] gap-8 rounded-[8px] pt-4 pr-6 pb-4 pl-4 flex items-center text-left mb-2 border border-gray-700">
+          <span className="bg-no-repeat bg-contain w-12 h-12 inline-block" style={{ backgroundImage: "url(/assets/icons/track-monthly-cash.png);"}}></span>
+          <p className="text-[#FFFFFF99]">Track monthly Cash Flow<br /> & Net Worth </p>
+          </div>
+          <div className="bg-[#FFFFFF0A] gap-8 rounded-[8px] pt-4 pr-6 pb-4 pl-4 flex items-center text-left mb-2 border border-gray-700">
+          <span className="bg-no-repeat bg-contain w-12 h-12 inline-block" style={{ backgroundImage: "url(/assets/icons/invest-daily.png);"}}></span>
+          <p className="text-[#FFFFFF99]">Invest daily, weekly, or  <br />monthly with No-Penalty SIPs</p>
+          </div>
+          <div className="bg-[#FFFFFF0A] gap-8 rounded-[8px] pt-4 pr-6 pb-4 pl-4 flex items-center text-left border border-gray-700">
+          <span className="bg-no-repeat bg-contain w-12 h-12 inline-block" style={{ backgroundImage: "url(/assets/icons/instant-loan.png);"}}></span>
+          <p className="text-[#FFFFFF99]">Instant loans starting
+           <br />at 0% interest</p>
+          </div>
+          <div className="h-px w-[148px] bg-linear-gray mt-9 mx-auto"></div>
+        </div>
+        </section>
+        <section className="py-[30px] px-5 text-center">
+        <h2 className="text-[38px] font-bold leading-[42px] text-linear-gray mb-[50px]">See if you  <br />make the cut</h2>
+        <p className="text-sm font-normal leading-[18px] text-[#8C8C8C] mb-7">Open an All-in-1 <br /><span className="text-white">Savings Account</span></p>
+        <span className="bg-no-repeat bg-contain w-12 h-12 inline-block ml-[44px] mb-1" style={{ backgroundImage: "url(/assets/icons/doted-line.png);"}}></span>
+        <p className="text-sm font-normal leading-[18px] text-[#8C8C8C] mb-[100px]">Maintain <span className="text-white">₹25,000</span> as your <br />average account balance <br />every month</p>
+       <div className="p-px rounded-lg">
+          <button className="custom-gradient rounded-lg p-4 text-lg font-bold leading-6 text-white w-full mb-2">
+          Get Jupiter Select
+          </button>
+          <p className="text-xs font-medium text-white">The most rewarding account</p>
+        </div>
+        </section>
       </div>
+    </div>   
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   );
 }

@@ -1,33 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Manrope', sans-serif !important;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.bg-linear-gray{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50.24%, rgba(255, 255, 255, 0) 102.54%);
+}
+.custom-gradient{
+  background: linear-gradient(238.15deg, rgba(252, 122, 105, 0.90) -11.09%, rgba(38, 0, 87, 0.90) 238.15%);
+}
+.text-linear-gray{
+  background: linear-gradient(253deg, #FFF -6.54%, rgba(255, 255, 255, 0.13) 105.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
